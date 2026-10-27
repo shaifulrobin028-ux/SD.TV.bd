@@ -1,0 +1,240 @@
+[
+  {
+    "name": "Ananda TV",
+    "group": "Entertainment",
+    "logo": "https://i.imgur.com/jkbo7Qe.png",
+    "tvgId": "AnandaTV.bd@SD",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/anandatv.stream/live-orgin/anandatv.stream/playlist.m3u8"
+  },
+  {
+    "name": "Ananda TV (480p)",
+    "group": "Entertainment",
+    "logo": "https://i.imgur.com/jkbo7Qe.png",
+    "tvgId": "AnandaTV.bd@SD",
+    "url": "http://103.99.249.139/anandatv/index.m3u8"
+  },
+  {
+    "name": "ATN Bangla (720p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/K1HmMRz.png",
+    "tvgId": "ATNBangla.bd@SD",
+    "url": "http://tvsen5.aynascope.net/atnbangla/index.m3u8"
+  },
+  {
+    "name": "ATN Bangla (720p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/K1HmMRz.png",
+    "tvgId": "ATNBangla.bd@SD",
+    "url": "https://tvsen5.aynaott.com/atnbangla/index.m3u8"
+  },
+  {
+    "name": "ATN Music (360p)",
+    "group": "Music",
+    "logo": "https://www.jagobd.com/wp-content/uploads/2015/12/atnmusic.jpg?x50681",
+    "tvgId": "ATNMusic.bd@SD",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnmusic.stream/playlist.m3u8"
+  },
+  {
+    "name": "Bangla Vision (720p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/nCWgp38.png",
+    "tvgId": "BanglaVision.bd@SD",
+    "url": "https://tvsen5.aynaott.com/banglavision/index.m3u8"
+  },
+  {
+    "name": "Boishakhi TV",
+    "group": "General",
+    "logo": "https://i.imgur.com/gxL05Y4.png",
+    "tvgId": "BoishakhiTV.bd@SD",
+    "url": "https://boishakhi.sonarbanglatv.com/boishakhi/boishakhitv/index.m3u8"
+  },
+  {
+    "name": "Channel S",
+    "group": "Culture",
+    "logo": "https://www.channels.com.bd/storage/project_files/logo/2024-05-14a_n17156821814310.png",
+    "tvgId": "ChannelS.bd@SD",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/channels.stream/live-orgin/channels.stream/playlist.m3u8"
+  },
+  {
+    "name": "DBC News (480p)",
+    "group": "News",
+    "logo": "https://i.imgur.com/Qbt6q4z.png",
+    "tvgId": "DBCNews.bd@SD",
+    "url": "http://tvn3.chowdhury-shaheb.com/dbc/index.m3u8"
+  },
+  {
+    "name": "Duronto TV (720p)",
+    "group": "Kids",
+    "logo": "https://i.imgur.com/gXsddRK.png",
+    "tvgId": "DurontoTV.bd@SD",
+    "url": "https://box.bbaria.net/DurontoTV/index.m3u8"
+  },
+  {
+    "name": "Duronto TV (720p)",
+    "group": "Kids",
+    "logo": "https://i.imgur.com/gXsddRK.png",
+    "tvgId": "DurontoTV.bd@SD",
+    "url": "https://tvsen6.aynaott.com/6xyZ3N4oHv2KBJdB6W4p/index.m3u8"
+  },
+  {
+    "name": "Ekhon TV (1080p)",
+    "group": "Business",
+    "logo": "https://i.imgur.com/tRrDh6z.png",
+    "tvgId": "EkhonTV.bd@SD",
+    "url": "https://tplay.live/out/bangladesh/ekhontv.index.m3u8"
+  },
+  {
+    "name": "Ekushey TV (480p)",
+    "group": "News",
+    "logo": "https://i.imgur.com/lRpkGHj.png",
+    "tvgId": "EkusheyTV.bd@SD",
+    "url": "https://ekusheyserver.com/etvlivesn.m3u8"
+  },
+  {
+    "name": "Gazi TV",
+    "group": "General",
+    "logo": "https://i.imgur.com/2Lzhiq6.png",
+    "tvgId": "GaziTV.bd@SD",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/live-orgin/gazibdz.stream/playlist.m3u8"
+  },
+  {
+    "name": "Gazi TV (1080p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/2Lzhiq6.png",
+    "tvgId": "GaziTV.bd@SD",
+    "url": "http://tvn1.chowdhury-shaheb.com/gazitv/index.m3u8"
+  },
+  {
+    "name": "Green TV (1080p)",
+    "group": "Family",
+    "logo": "https://www.jagobd.com/wp-content/uploads/2022/12/green-tv.jpg",
+    "tvgId": "GreenTV.bd@SD",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/playlist.m3u8"
+  },
+  {
+    "name": "Maasranga TV (720p)",
+    "group": "Entertainment",
+    "logo": "https://i.imgur.com/uVZJMed.png",
+    "tvgId": "MaasrangaTV.bd@SD",
+    "url": "http://tvsen5.aynascope.net/maasrangatv/index.m3u8"
+  },
+  {
+    "name": "Maasranga TV (720p)",
+    "group": "Entertainment",
+    "logo": "https://i.imgur.com/uVZJMed.png",
+    "tvgId": "MaasrangaTV.bd@SD",
+    "url": "https://tvsen5.aynaott.com/maasrangatv/index.m3u8"
+  },
+  {
+    "name": "Madani Channel Bangla (1080p)",
+    "group": "Religious",
+    "logo": "https://i.imgur.com/vIJTVia.png",
+    "tvgId": "MadaniChannelBangla.bd@SD",
+    "url": "https://streaming.madanichannel.tv/static/streaming-playlists/hls/d3e49b76-ac06-4689-a641-9200445b647f/master.m3u8"
+  },
+  {
+    "name": "Matribhumi TV (720p)",
+    "group": "",
+    "logo": "https://www.jagobd.com/wp-content/uploads/2024/10/matribhumi.jpg",
+    "tvgId": "MatribhumiTV.bd@HD",
+    "url": "http://live.playmax.live/matribhumi/index.m3u8"
+  },
+  {
+    "name": "Movie Bangla",
+    "group": "Movies",
+    "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/moviebangla.jpg?x50681",
+    "tvgId": "MovieBangla.bd@SD",
+    "url": "http://alvetv.com/moviebanglatv/8080/index.m3u8"
+  },
+  {
+    "name": "My TV",
+    "group": "General",
+    "logo": "https://i.imgur.com/475qK5T.png",
+    "tvgId": "MyTV.bd@SD",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/mytv-up-off.stream/live-orgin/mytv-up-off.stream/playlist.m3u8"
+  },
+  {
+    "name": "NAN TV",
+    "group": "News",
+    "logo": "https://www.jagobd.com/wp-content/uploads/2019/11/NAN-TV-Logo-02.png",
+    "tvgId": "NANTV.bd@SD",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/nantv.stream/live-orgin/nantv.stream/playlist.m3u8"
+  },
+  {
+    "name": "News 21 Bangla TV",
+    "group": "News",
+    "logo": "https://i.imgur.com/ijuJfmd.png",
+    "tvgId": "News21BanglaTV.bd@SD",
+    "url": "http://103.190.133.68:1935/news21live/live/playlist.m3u8"
+  },
+  {
+    "name": "Nexus TV (576p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/XcJZKg4.png",
+    "tvgId": "NexusTV.bd@SD",
+    "url": "https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8"
+  },
+  {
+    "name": "NTV (720p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/l75bDTx.png",
+    "tvgId": "NTV.bd@SD",
+    "url": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8"
+  },
+  {
+    "name": "Rajdhani TV (1080p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/MBm2gPz.jpeg",
+    "tvgId": "RajdhaniTV.bd@SD",
+    "url": "https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8"
+  },
+  {
+    "name": "RTV (480p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/yu8ugqt.png",
+    "tvgId": "RTV.bd@SD",
+    "url": "http://tvn3.chowdhury-shaheb.com/rtv/index.m3u8"
+  },
+  {
+    "name": "RTV (720p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/yu8ugqt.png",
+    "tvgId": "RTV.bd@SD",
+    "url": "http://tvsen5.aynascope.net/RtvHD/index.m3u8"
+  },
+  {
+    "name": "RTV (720p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/yu8ugqt.png",
+    "tvgId": "RTV.bd@SD",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtv-sg.stream/index.m3u8"
+  },
+  {
+    "name": "RTV (720p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/yu8ugqt.png",
+    "tvgId": "RTV.bd@SD",
+    "url": "https://tvsen5.aynaott.com/RtvHD/index.m3u8"
+  },
+  {
+    "name": "Rupashi Bangla TV (720p)",
+    "group": "Entertainment",
+    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Rupashi_Bangla.png",
+    "tvgId": "RupashiBanglaTV.bd@SD",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ruposhibangla.stream/playlist.m3u8"
+  },
+  {
+    "name": "T Sports (1080p)",
+    "group": "Sports",
+    "logo": "https://i.imgur.com/2JzlorD.png",
+    "tvgId": "TSports.bd@SD",
+    "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8"
+  },
+  {
+    "name": "Vokta TV (720p)",
+    "group": "General",
+    "logo": "https://i.imgur.com/szAGBCU.png",
+    "tvgId": "VoktaTV.bd@SD",
+    "url": "https://vokta.raytahost.com/live/voktatv/index.m3u8"
+  }
+]

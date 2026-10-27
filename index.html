@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090d16">
+<meta name="description" content="Customization TV: browse and watch channels from your own M3U playlist.">
+<title>Customization TV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#090d16;--panel:#111827;--panel2:#182235;--text:#f5f7fb;--muted:#9aa7bd;--line:#263247;--accent:#ff4d6d;--accent2:#ff8a5b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 20% -15%,#20294a 0,transparent 38%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;min-height:100vh}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,4vw,56px);border-bottom:1px solid #ffffff12;background:#090d16cc;backdrop-filter:blur(18px);position:sticky;top:0;z-index:5}
+.brand{display:flex;align-items:center;gap:12px;font:800 22px Outfit,sans-serif;letter-spacing:-.6px}.brandmark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;box-shadow:0 8px 28px #ff4d6d35}.brandmark svg{width:19px;fill:white}
+.header-right{color:var(--muted);font-size:12px;display:flex;align-items:center;gap:8px}.dot{width:7px;height:7px;border-radius:50%;background:#42d392;box-shadow:0 0 10px #42d392}
+main{max-width:1500px;margin:auto;padding:30px clamp(16px,4vw,56px) 60px}
+.hero{display:flex;justify-content:space-between;align-items:end;gap:24px;margin:4px 0 24px}.eyebrow{color:#ff8195;text-transform:uppercase;font-size:11px;letter-spacing:2px;font-weight:700;margin-bottom:9px}.hero h1{font:800 clamp(28px,4vw,44px) Outfit,sans-serif;letter-spacing:-1.5px;margin:0}.hero p{color:var(--muted);margin:9px 0 0;max-width:580px;line-height:1.6;font-size:14px}
+.search-wrap{position:relative;width:min(100%,320px);flex-shrink:0}.search-wrap svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:17px;stroke:var(--muted);fill:none;stroke-width:2}.search-wrap input{width:100%;height:46px;background:#111827;border:1px solid var(--line);border-radius:13px;padding:0 14px 0 42px;color:white;outline:none;font:inherit}.search-wrap input:focus{border-color:#ff647e;box-shadow:0 0 0 3px #ff4d6d18}
+.player-layout{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(280px,.8fr);gap:20px;align-items:stretch}
+.player-card,.list-card{background:linear-gradient(145deg,#141d2d,#0f1521);border:1px solid var(--line);border-radius:20px;overflow:hidden;min-width:0}
+.player-top{padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}.now{display:flex;align-items:center;gap:12px;min-width:0}.now-logo{width:44px;height:44px;border-radius:13px;background:#202b3e;display:grid;place-items:center;overflow:hidden;flex-shrink:0}.now-logo img{width:100%;height:100%;object-fit:contain}.now-title{font:700 17px Outfit,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.now-sub{font-size:12px;color:var(--muted);margin-top:4px}.live-pill{font-size:10px;font-weight:700;letter-spacing:1px;color:#ff8598;background:#ff4d6d18;border:1px solid #ff4d6d44;padding:6px 9px;border-radius:8px;white-space:nowrap}
+.video-shell{aspect-ratio:16/9;background:#03060b;position:relative;display:grid;place-items:center}.video-shell video{width:100%;height:100%;object-fit:contain;background:#03060b}.empty-state{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:radial-gradient(ellipse at center,#1b263b 0,transparent 70%);pointer-events:none}.big-play{width:68px;height:68px;border-radius:22px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;margin-bottom:18px;box-shadow:0 12px 38px #ff4d6d35}.big-play svg{width:25px;fill:white}.empty-state strong{font:700 20px Outfit,sans-serif}.empty-state span{font-size:13px;color:var(--muted);margin-top:8px}.player-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 20px;color:var(--muted);font-size:12px}.player-footer button{border:1px solid var(--line);border-radius:10px;background:#1a2537;color:#e8edf7;padding:9px 12px;font:600 12px inherit;cursor:pointer}.player-footer button:hover{border-color:#ff7188}
+.list-head{padding:19px 18px 13px;border-bottom:1px solid var(--line)}.list-head-row{display:flex;justify-content:space-between;align-items:center;gap:12px}.list-head h2{font:700 18px Outfit,sans-serif;margin:0}.count{font-size:11px;color:var(--muted);background:#ffffff0a;border:1px solid var(--line);padding:5px 8px;border-radius:7px}.filters{display:flex;gap:7px;overflow:auto;padding:14px 18px 2px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{border:1px solid var(--line);border-radius:9px;background:#111827;color:var(--muted);padding:7px 10px;font:600 11px inherit;white-space:nowrap;cursor:pointer}.filter.active{background:#ff4d6d1c;color:#ff9aaa;border-color:#ff4d6d6b}
+.channel-list{padding:10px;max-height:470px;overflow:auto}.channel{width:100%;display:flex;align-items:center;gap:11px;padding:10px;border:1px solid transparent;background:transparent;color:inherit;border-radius:13px;text-align:left;cursor:pointer;margin-bottom:3px}.channel:hover{background:#ffffff08}.channel.active{background:linear-gradient(90deg,#ff4d6d1d,#ff4d6d08);border-color:#ff4d6d4a}.ch-logo{width:43px;height:43px;flex-shrink:0;border-radius:11px;background:#202b3e;display:grid;place-items:center;overflow:hidden;color:#aab7cc;font:700 12px Outfit,sans-serif}.ch-logo img{width:100%;height:100%;object-fit:contain;padding:4px}.ch-info{flex:1;min-width:0}.ch-name{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ch-meta{font-size:11px;color:var(--muted);margin-top:5px}.play-icon{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;color:#8795ac;background:#ffffff08;flex-shrink:0}.channel.active .play-icon{color:#ff879a;background:#ff4d6d1c}.play-icon svg{width:12px;fill:currentColor}
+.status{margin:0 18px 16px;padding:11px 12px;border-radius:10px;background:#ffffff06;border:1px solid #ffffff0b;color:var(--muted);font-size:11px;line-height:1.5}.status.error{color:#ffb5be;background:#ff4d6d0c;border-color:#ff4d6d2b}
+.section-title{display:flex;align-items:center;justify-content:space-between;margin:28px 0 14px}.section-title h2{font:700 20px Outfit,sans-serif;margin:0}.section-title span{font-size:12px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{background:#111827a8;border:1px solid var(--line);border-radius:15px;padding:16px 18px}.stat b{font:700 22px Outfit,sans-serif}.stat div{color:var(--muted);font-size:12px;margin-top:5px}
+footer{max-width:1500px;margin:auto;padding:0 clamp(16px,4vw,56px) 28px;color:#6f7c91;font-size:11px;line-height:1.7}
+@media(max-width:900px){.player-layout{grid-template-columns:1fr}.channel-list{max-height:370px}.hero{align-items:stretch;flex-direction:column}.search-wrap{width:100%}.player-top{padding:15px}.player-footer{padding:13px 15px}}
+@media(max-width:460px){header{height:66px}.brand{font-size:19px}.header-right{font-size:0}.hero h1{font-size:32px}.stats{gap:8px}.stat{padding:13px}.stat b{font-size:19px}.stat div{font-size:10px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="brandmark"><svg viewBox="0 0 24 24"><path d="M8 5.5a1 1 0 0 1 1.5-.86l10 6a1 1 0 0 1 0 1.72l-10 6A1 1 0 0 1 8 17.5z"/></svg></div>Customization TV</div>
+  <div class="header-right"><span class="dot"></span> YOUR PERSONAL CHANNEL HUB</div>
+</header>
+<main>
+  <section class="hero">
+    <div><div class="eyebrow">Live television · Your playlist</div><h1>All your channels.<br>One place.</h1><p>Browse the playlist, pick a channel, and watch in the built-in player. Availability depends on each stream provider.</p></div>
+    <label class="search-wrap"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Search channels..." autocomplete="off" aria-label="Search channels"></label>
+  </section>
+  <section class="player-layout">
+    <div class="player-card">
+      <div class="player-top"><div class="now"><div class="now-logo" id="nowLogo">TV</div><div style="min-width:0"><div class="now-title" id="nowTitle">Choose a channel</div><div class="now-sub" id="nowSub">Ready when you are</div></div></div><div class="live-pill">● LIVE PLAYER</div></div>
+      <div class="video-shell"><video id="video" controls playsinline></video><div class="empty-state" id="empty"><div class="big-play"><svg viewBox="0 0 24 24"><path d="M8 5.5a1 1 0 0 1 1.5-.86l10 6a1 1 0 0 1 0 1.72l-10 6A1 1 0 0 1 8 17.5z"/></svg></div><strong>Your next favorite channel</strong><span>Select any channel from the list to start watching.</span></div></div>
+      <div class="player-footer"><span id="playerMessage">Select a channel to begin playback.</span><button id="stopBtn" type="button">Stop playback</button></div>
+    </div>
+    <aside class="list-card">
+      <div class="list-head"><div class="list-head-row"><h2>Channel guide</h2><span class="count" id="channelCount">Loading…</span></div></div>
+      <div class="filters" id="filters"></div>
+      <div class="channel-list" id="channelList"></div>
+      <div class="status" id="status">Loading your playlist…</div>
+    </aside>
+  </section>
+  <div class="section-title"><h2>Your playlist at a glance</h2><span>Loaded from channels.json</span></div>
+  <section class="stats"><div class="stat"><b id="totalStat">—</b><div>Stream entries</div></div><div class="stat"><b id="categoryStat">—</b><div>Categories</div></div><div class="stat"><b>HLS</b><div>Live stream playback</div></div></section>
+</main>
+<footer>Customization TV is a playlist player, not a broadcaster. Stream links and logos are used as provided in your M3U file. Only watch streams you are authorized to access. Some providers may block browser playback, require HTTPS, or become unavailable. The app does not host or relay video.</footer>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+const $ = id => document.getElementById(id);
+const video = $('video');
+let channels = [], activeCategory = 'All', activeChannel = null, hls = null;
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const initials = name => (name || 'TV').replace(/\([^)]*\)/g,'').trim().split(/\s+/).slice(0,2).map(w=>w[0]||'').join('').toUpperCase();
+function logoHTML(c, cls='ch-logo') {
+  const fallback = `<span>${esc(initials(c.name))}</span>`;
+  return `<div class="${cls}">${c.logo ? `<img src="${esc(c.logo)}" alt="" loading="lazy" onerror="this.remove();this.parentElement.innerHTML='${esc(initials(c.name))}'">` : fallback}</div>`;
+}
+function categories() { return ['All', ...new Set(channels.map(c => c.group || 'Other'))]; }
+function renderFilters() {
+  $('filters').innerHTML = categories().map(cat => `<button type="button" class="filter ${cat===activeCategory?'active':''}" data-cat="${esc(cat)}">${esc(cat)}</button>`).join('');
+  $('filters').querySelectorAll('button').forEach(btn => btn.addEventListener('click',()=>{activeCategory=btn.dataset.cat;renderFilters();renderChannels()}));
+}
+function filteredChannels() {
+  const q = $('search').value.trim().toLowerCase();
+  return channels.filter(c => (activeCategory==='All' || (c.group||'Other')===activeCategory) && `${c.name} ${c.group} ${c.tvgId}`.toLowerCase().includes(q));
+}
+function renderChannels() {
+  const shown = filteredChannels();
+  $('channelCount').textContent = `${shown.length} shown`;
+  if (!shown.length) { $('channelList').innerHTML='<div style="padding:24px 12px;color:#9aa7bd;font-size:13px;text-align:center">No channels match your search.</div>';return; }
+  $('channelList').innerHTML = shown.map(c => {
+    const idx = channels.indexOf(c);
+    return `<button type="button" class="channel ${activeChannel===idx?'active':''}" data-index="${idx}">${logoHTML(c)}<div class="ch-info"><div class="ch-name">${esc(c.name)}</div><div class="ch-meta">${esc(c.group||'Other')} · ${c.url.startsWith('https:')?'HTTPS stream':'HTTP stream'}</div></div><div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5.5a1 1 0 0 1 1.5-.86l10 6a1 1 0 0 1 0 1.72l-10 6A1 1 0 0 1 8 17.5z"/></svg></div></button>`;
+  }).join('');
+  $('channelList').querySelectorAll('.channel').forEach(btn => btn.addEventListener('click',()=>playChannel(Number(btn.dataset.index))));
+}
+function setStatus(message, error=false) { $('status').textContent=message; $('status').classList.toggle('error',error); $('playerMessage').textContent=message; }
+function playChannel(index) {
+  const c = channels[index]; if (!c) return;
+  activeChannel = index;
+  $('nowTitle').textContent = c.name;
+  $('nowSub').textContent = `${c.group || 'Other'} · Stream provided by playlist`;
+  $('nowLogo').innerHTML = c.logo ? `<img src="${esc(c.logo)}" alt="" style="width:100%;height:100%;object-fit:contain;padding:4px" onerror="this.remove()">` : esc(initials(c.name));
+  $('empty').style.display='none';
+  if (hls) { hls.destroy(); hls=null; }
+  video.pause(); video.removeAttribute('src'); video.load();
+  renderChannels();
+  setStatus('Connecting to stream…');
+  if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = c.url;
+    video.play().then(()=>setStatus('Playing. If the stream stays blank, the provider may block browser playback.')).catch(()=>setStatus('Stream selected. Press play, or try another stream variant.',true));
+  } else if (window.Hls && Hls.isSupported()) {
+    hls = new Hls({enableWorker:true, lowLatencyMode:true});
+    hls.loadSource(c.url); hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,()=>video.play().then(()=>setStatus('Playing live stream.')).catch(()=>setStatus('Stream loaded. Press play to start.',true)));
+    hls.on(Hls.Events.ERROR,(_,data)=>{if(data.fatal)setStatus('Playback failed. This stream may be offline, HTTP-only, or blocked by CORS. Try another channel.',true);});
+  } else {
+    setStatus('This browser does not support HLS playback. Try Safari on iPhone or a modern browser.',true);
+  }
+}
+$('search').addEventListener('input',renderChannels);
+$('stopBtn').addEventListener('click',()=>{if(hls){hls.destroy();hls=null}video.pause();video.removeAttribute('src');video.load();activeChannel=null;$('empty').style.display='flex';$('nowTitle').textContent='Choose a channel';$('nowSub').textContent='Ready when you are';$('nowLogo').textContent='TV';renderChannels();setStatus('Playback stopped. Select a channel to begin.')});
+fetch('./channels.json').then(r=>{if(!r.ok)throw new Error('Could not load channels.json');return r.json()}).then(data=>{
+  channels=data.filter(c=>c.url); $('totalStat').textContent=channels.length; $('categoryStat').textContent=new Set(channels.map(c=>c.group||'Other')).size;
+  renderFilters();renderChannels();$('channelCount').textContent=`${channels.length} channels`;setStatus(`Playlist ready: ${channels.length} stream entries loaded.`);
+}).catch(err=>{setStatus('Playlist could not load. Make sure index.html and channels.json are in the same folder and published together.',true);$('channelList').innerHTML='<div style="padding:20px;color:#ffb5be;font-size:13px">Could not load channels.json.</div>';});
+</script>
+</body>
+</html>
